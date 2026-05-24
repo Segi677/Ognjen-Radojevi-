@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ognjen Radojević</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Red, sans-serif;
+}
+
+body{
+background: linear-gradient(to bottom, #556b2f, #2f4f2f);
+color:white;
+padding:30px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.hero{
+text-align:center;
+margin-top:40px;
+}
+
+.hero h1{
+font-size:75px;
+color:#ff814f;
+font-weight:bold;
+}
+
+.hero p{
+font-size:30px;
+margin-top:20px;
+color:#ededed;
+}
+
+.profile-img{
+width:100%;
+max-width:700px;
+border-radius:30px;
+border:5px solid #ffad4f;
+margin-top:50px;
+box-shadow:0 0 25px #ff814f;
+}
+
+.about{
+margin-top:60px;
+}
+
+.about h2{
+font-size:60px;
+color:#ff814f;
+margin-bottom:30px;
+}
+
+.about p{
+font-size:28px;
+line-height:1.8;
+color:#f0f0f0;
+}
+
+.buttons{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+button{
+background:#4fff92;
+border:none;
+padding:20px 40px;
+border-radius:20px;
+color:white;
+font-size:28px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.career-text{
+margin-top:35px;
+font-size:28px;
+line-height:1.8;
+color:#f0f0f0;
+background:#314d24;
+padding:30px;
+border-radius:25px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.contact-box{
+display:none;
+margin-top:40px;
+background:#314d24;
+padding:35px;
+border-radius:30px;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+.contact-box h3{
+font-size:45px;
+margin-bottom:25px;
+}
+
+.contact-box p{
+font-size:28px;
+line-height:2;
+}
+
+.table-box{
+display:none;
+margin-top:40px;
+background:#314d24;
+padding:35px;
+border-radius:30px;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+.table-box h3{
+font-size:45px;
+margin-bottom:30px;
+color:#ff5b4f;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td{
+border:2px solid #ff814f;
+padding:20px;
+font-size:26px;
+}
+
+td:first-child{
+font-weight:bold;
+color:#4fc3ff;
+}
+
+footer{
+text-align:center;
+margin-top:70px;
+color:#d0d0d0;
+font-size:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+.about h2{
+font-size:45px;
+}
+
+.about p,
+.career-text,
+.contact-box p,
+td{
+font-size:22px;
+}
+
+button{
+width:100%;
+font-size:24px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<h1>
+Ognjen<br>Radojević
+</h1>
+
+<p>
+Košarkaš, sanjar i buduća zvezda srpske košarke.
+</p>
+
+<!-- STAVI OVDE SVOJU SLIKU -->
+<img src="slika.jpg.png" class="profile-img">
+
+</div>
+
+<div class="about">
+
+<h2><b>O meni</b></h2>
+
+<p>
+Zovem se Ognjen Radojević, imam 17 godina i učenik sam gimnazije.
+Bavim se košarkom i dobar sam u njoj.U igri sam već 10 godina i prošao sam kroz sve mlađe kategorije.
+Moj cilj je da zaigram u KK Crvena Zvezda Meridianbet i pogodim clutch trojku u derbiju.
+</p>
+
+<div class="buttons">
+
+<button onclick="showContact()">
+Kontakt
+</button>
+
+<button onclick="showTraits()">
+Moje osobine
+</button>
+
+</div>
+
+<p class="career-text">
+Trenutno sam u dogovorima sa ariljskim klubom Klik gde ću i
+nastupati ove sezone, ali za sledeću godinu zainteresovan sam
+da se oprobam i u profesionalnijoj ligi.
+</p>
+
+<!-- KONTAKT -->
+
+<div class="contact-box" id="contact">
+
+<h3>Kontakt informacije za dogovre</h3>
+
+<p>📧 Email: ognjenradojevic700@gmail.com</p>
+<p>📱 Telefon: +381 60 090 1738</p>
+<p>📍 Arilje,Srbija</p>
+
+
+</div>
+
+<!-- TABELA -->
+
+<div class="table-box" id="traits">
+
+<h3>Moje osobine</h3>
+
+<table>
+
+<tr>
+<td>Visina</td>
+<td>199 cm</td>
+</tr>
+
+<tr>
+<td>Raspon ruku</td>
+<td>200 cm</td>
+</tr>
+
+<tr>
+<td>Pozicija</td>
+<td>PF, C</td>
+</tr>
+
+<tr>
+<td>Prednost</td>
+<td>Dobar šut</td>
+</tr>
+
+<tr>
+<td>Prosek poena prošle sezone</td>
+<td>20.2</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<script>
+
+function showContact(){
+
+let contact = document.getElementById("contact");
+
+if(contact.style.display === "block"){
+contact.style.display = "none";
+}else{
+contact.style.display = "block";
+}
+}
+
+function showTraits(){
+
+let traits = document.getElementById("traits");
+
+if(traits.style.display === "block"){
+traits.style.display = "none";
+}else{
+traits.style.display = "block";
+}
+}
+
+</script>
+
+</body>
+</html>
+
